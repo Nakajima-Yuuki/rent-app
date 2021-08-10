@@ -57,6 +57,6 @@ class EstatesController < ApplicationController
   end
 
   def estate_params
-    params.require(:estate).permit(:name, :price, :adress, :year, :content, stations_attributes: [:route, :station_name, :walk, :estate_id])
+    params.require(:estate).permit(:name, :price, :address, :year, :content, stations_attributes: [:route, :station_name, :walk, :estate_id])
   end
 end
